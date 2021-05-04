@@ -11,7 +11,7 @@
   <body>
 
     <div class= "header">
-      <a href="Index.html">
+      <a href="https://www.ecommerce.humanit.group/">
         <div class="logo_main"><img src="images/humanit_lable.svg" alt="image"></div>
      </a>
       <div class="slogan_main">
@@ -146,10 +146,11 @@
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
-         
+         <a href="./downloads/E-book.pdf" download="lalala.pdf">
          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+         </a>
         </form>
-        <a href="Index.html">
+        <a href="https://www.ecommerce.humanit.group/">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
       </a>
     </div>
