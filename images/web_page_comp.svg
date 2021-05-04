@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249.858" height="141.846" viewBox="0 0 249.858 141.846">
+  <defs>
+    <filter id="Контур_52" x="95.999" y="121.532" width="57.75" height="13.852" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#eb4e1d" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_53" x="19.39" y="0" width="210.858" height="129.542" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#eb4e1d" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Прямоугольник_840" x="26.524" y="6.644" width="196.604" height="113.945" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-3"/>
+      <feFlood flood-color="#eb4e1d" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_54" x="0" y="127.346" width="249.858" height="14.5" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-4"/>
+      <feFlood flood-color="#eb4e1d" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_17" data-name="Сгруппировать 17" transform="translate(5.706 5)">
+    <g transform="matrix(1, 0, 0, 1, -5.71, -5)" filter="url(#Контур_52)">
+      <path id="Контур_52-2" data-name="Контур 52" d="M309.258,430.536h47.75V432.3c0,1.149-.672,2.091-1.5,2.091h-44.73c-.844,0-1.516-.942-1.516-2.091Z" transform="translate(-208.26 -304)" fill="none" stroke="#eb4e1d" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -5.71, -5)" filter="url(#Контур_53)">
+      <path id="Контур_53-2" data-name="Контур 53" d="M310.887,125.434v111.52a5.76,5.76,0,0,1-.33,1.956h-200.2a5.77,5.77,0,0,1-.33-1.956V125.434a6.064,6.064,0,0,1,6.065-6.065H304.822A6.064,6.064,0,0,1,310.887,125.434Z" transform="translate(-85.64 -114.37)" fill="none" stroke="#eb4e1d" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -5.71, -5)" filter="url(#Прямоугольник_840)">
+      <rect id="Прямоугольник_840-2" data-name="Прямоугольник 840" width="186.605" height="103.945" transform="translate(31.52 11.64)" fill="none" stroke="#eb4e1d" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -5.71, -5)" filter="url(#Контур_54)">
+      <path id="Контур_54-2" data-name="Контур 54" d="M299.885,442.4c-.147.147-.306.294-.452.428a14.327,14.327,0,0,1-9.575,4.072H73.519A20.624,20.624,0,0,1,62.1,442.972a6.141,6.141,0,0,1-.66-.575Z" transform="translate(-55.73 -310.05)" fill="none" stroke="#eb4e1d" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
