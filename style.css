@@ -394,7 +394,11 @@ li span {
     float: left;
   }
 }
-
+.agree{
+  font-style: normal;
+  color: #EB4E1D;
+  font-weight: 600;
+  
 .img_comp {
   margin: 0px 60px 110px 60px;
   -webkit-box-pack: center;
