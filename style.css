@@ -2067,8 +2067,9 @@ textarea::-webkit-input-placeholder {
   }
 }
 .btn_thanku {
-  width: 320px;
+  width: 313px;
   margin-top: 100px;
+  margin-buttom: 100px;
   margin-left: auto;
   margin-right: auto;
 }
