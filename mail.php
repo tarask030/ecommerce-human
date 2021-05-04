@@ -36,7 +36,8 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thanku.html');
     header('Location: E-book.pdf');
+    header('location: thanku.html');
+    
 }
 ?>
