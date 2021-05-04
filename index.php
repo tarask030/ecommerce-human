@@ -125,17 +125,11 @@
         <div class="screen_image">
           <img src="images/web_page_screen.png" alt="">
       </div>
-        <div class="btn_download">
-          <a href="index.html">POBIERZ TERAZ</a>
-        </div>
         <div class="description_text_center_ebook_down">
           <p>Pobierz darmowego ebooka i zaproś klientów do swojego <em>wymarzonego sklepu internetowego.</em></br></br>
             Aby otrzymać więcej porad i poznać więcej szczegółów na temat rozwoju swojego biznesu w Internecie, możesz zapisać się do newslettera Human IT. 
             Dzięki któremu z czasem poznasz wszystkie tajemnice świata E-commerce.
           </p>
-        </div>
-        <div class="btn_download_biger">
-          <a href="index.html">POBIERZ TERAZ</a>
         </div>
       <div class="line_right_ebook"><img src="images/line.svg" alt=""></div>
     </div>
@@ -148,11 +142,14 @@
           <input type="text" name="user_email" placeholder="Adress e-mail" class="form-control" type="email" required />
           <input type="text" name="user_phone" placeholder="Numer telefonu" class="form-control" type="phone" required />
           <textarea rows="4" cols="50" type = "text" name="user_text" class="message" required></textarea>
-          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> Zgoda na ptzetwarzanie danych osobowych</div>
+          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> Zgoda na przetwarzanie danych osobowych</div>
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
-        <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">WYŚLIJ</span></button>
+         
+        <a href="downloads/E-commerce.pdf" download>
+         <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+        </a>
         </form>
         <a href="Index.html">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
