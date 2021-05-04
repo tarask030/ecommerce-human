@@ -8,7 +8,6 @@ body {
   background-repeat: repeat-y;
   font-family: 'Montserrat', sans-serif;
 }
-
 @media only screen and (min-width: 1200px) {
   body {
     background-image: url(images/background1200.png);
