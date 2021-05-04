@@ -37,11 +37,5 @@ if(!$mail->send()) {
     echo 'Error';
 } else {
     header('location: thanku.html');
-     header('Content-Type: application/download');
-  header('Content-Disposition: attachment; filename="E-book.pdf"');
-  header("Content-Length: " . filesize("E-book.pdf"));
-  $fp = fopen("E-book.pdf", "r");
-  fpassthru($fp);
-  fclose($fp);
 }
 ?>
