@@ -134,6 +134,7 @@
       <div class="line_right_ebook"><img src="images/line.svg" alt=""></div>
     </div>
   </div>
+<a href="downloads/E-book.pdf" download>Скачать файл</a>
 
     <div class= "footer">
         <h3 class="title_text_left_footer"><strong>Zaprogramujemy</strong> Twój sukces!</h3>
