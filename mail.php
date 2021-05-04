@@ -12,7 +12,7 @@ $text = $_POST['user_text'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';                                                                                                                                           >
+$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'tkram00@mail.ru'; // login
 $mail->Password = 'goAPRP2f3vr)'; // password our mail
@@ -20,9 +20,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / this port change for each mail provider 
 
 $mail->setFrom('tkram00@mail.ru'); // mail send
-$mail->addAddress('taras.kram@humanit.group');
-//$mail->addAddress('formularz@humanit.group');     // mail get
-//$mail->addAddress('jakub.wyszomirski@humanit.group');     // mail get
+$mail->addAddress('tarask030@gmail.com');     // mail get
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -32,7 +30,7 @@ $mail->addAddress('taras.kram@humanit.group');
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Zgloszenie od klienta';
-$mail->Body    = '' .$name . ' zostawil zgloszenie <br> numer tefonu: ' .$phone. '<br> adres mailowy: ' .$email. '<br> tekst zgloszenia: <br>' .$text;
+$mail->Body    = '' .$name . ' zostawil zgloszenie, numer tefonu: ' .$phone. '<br>adres mailowy: ' .$email. ' tekst zgloszenia: <br>' .$text;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
