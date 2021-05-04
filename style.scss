@@ -1,0 +1,1572 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+$black: #000000;
+$white: #ffffff;
+$orange:#EB4E1D;
+
+@mixin responsive($brakepoint) {
+    @if$brakepoint == tablets_min{
+        @media only screen and (max-width: 768px) {@content};
+    }
+    @if$brakepoint == tablets{
+        @media only screen and (min-width: 768px) {@content};
+    }
+    @if$brakepoint == pc{
+        @media only screen and (min-width: 992px) {@content};
+    }
+    @if$brakepoint == large_pc{
+        @media only screen and (min-width: 1200px) {@content};
+    }
+}
+body{
+    background-image: url(images/background360.png);
+    background-repeat: repeat-y;
+    font-family: 'Montserrat', sans-serif;
+    @include responsive(large_pc){
+        background-image: url(images/background1200.png);
+    }
+}
+.header{
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 515px;
+    position: static;
+    top: 0;
+    left: 0;
+    @include responsive(tablets){
+        max-width: 769px;
+        height: 870px;
+    }
+    @include responsive(pc){
+        max-width: 992px;
+        height: 550px;
+    }
+    @include responsive(large_pc){
+        height: 700px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer{
+    position: static;
+    top: 0;
+    left: 0;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+    @include responsive(tablets){
+        max-width: 768px;
+        height: 450px;
+    }
+    @include responsive(pc){
+        max-width: 992px;
+        height: 450px;
+    }
+    @include responsive(large_pc){
+        height: 440px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.logo_main{
+    margin-top: 94px;
+    margin-bottom: 88px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    @include responsive(pc){
+        margin-left: 80px;
+        margin-top: 104px;
+        display: flex;
+        justify-content: left;
+    }
+    @include responsive(large_pc){
+        justify-content: left;
+        margin-left: 104px;
+        margin-top: 104px;
+    }
+   
+}
+.logo_footer{
+    img{
+        width: 140px;
+        height: auto;
+        padding-top: 105px;
+        margin-left: 35%;
+        padding-bottom: 45px;
+        justify-content: center;
+        display: block;
+    }
+    @include responsive(tablets){
+        img{
+            width: 152px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }  
+    }
+    @include responsive(pc){
+        img{
+            width: 252px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }  
+    }
+    @include responsive(large_pc){
+        img{
+            width: 252px;
+            height: auto;
+            padding-bottom: 100px;
+            padding-top: 0px;
+        }
+    }
+}
+h1{
+    font-size: 20px;
+    @include responsive(pc){
+        font-size: 100px;
+        align-items: center;
+    }
+    @include responsive(large_pc){
+        font-size: 50px; 
+    }
+}
+h2{
+    font-size: 15px;
+    @include responsive(pc){
+        font-size: 20px; 
+    }
+    @include responsive(large_pc){
+        font-size: 20px; 
+    }
+}
+h3{
+    font-size: 20px;
+    @include responsive(tablets){
+        font-size: 30px; 
+        strong{
+            font-size: 30px;
+        }
+    }
+    @include responsive(pc){
+        font-size: 30px; 
+        strong{
+            font-size: 30px;
+        }
+    }
+    @include responsive(large_pc){
+        font-size: 30px; 
+        strong{
+            font-size: 30px;
+        }
+    }
+}
+h4{
+    font-weight: normal;
+    font-size: 12px;
+    float: left;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 13px;
+    @include responsive(pc){
+        font-size: 15px;
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    @include responsive(large_pc){
+        font-size: 15px;
+        width: 370px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+}
+p{
+    font-size: 12px;
+    @include responsive(large_pc){
+        font-size: 15px;
+    }
+    @include responsive(pc){
+        font-size: 15px;
+    }
+}
+em{
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600;
+    @include responsive(pc){
+        font-size: 15px;
+    }
+    @include responsive(large_pc){
+        font-size: 15px;
+    }
+}
+strong{
+    font-style: normal;
+    font-size: 20px;
+    color: $black;
+    @include responsive(tablets){
+        font-size: 40px;
+    }
+    @include responsive(pc){
+        font-size: 50px;
+    }
+}
+i{
+    font-style: normal;
+    font-size: 12px;
+    color: $orange; 
+    font-weight: 600;
+    @include responsive(pc){
+        font-size: 15px;
+    }
+    @include responsive(large_pc){
+        font-size: 15px;
+    }
+}
+li{
+    color: $orange;
+    margin-bottom: 17px;
+    span{
+        color: $black;
+    }
+    @include responsive(pc){
+        margin-bottom: 20px;
+    }
+    @include responsive(large_pc){
+        margin-bottom: 20px;
+    }
+}
+
+.medium{
+    font-weight: 600;
+    width: 10;
+}
+.slogan_main_text{
+    font-size: 20px;
+    color: $orange;
+    @include responsive(tablets){
+        font-size: 40px;
+        margin-top: 150px;
+        text-align: center;
+    }
+    @include responsive(pc){
+        font-size: 50px;
+        margin-top: 0px;
+        text-align: left;
+    }
+
+}
+
+.slogan_main{
+    margin: 0px 90px 45px 90px;
+    justify-content: center;
+    display: flex;
+    @include responsive(pc){
+        margin: 80px 0px 0px 80px;
+        width: 455px;
+        float: left;
+    }
+    @include responsive(large_pc){
+        margin: 150px 0px 0px 104px;
+        width: 455px;
+        float: left;
+    }
+   
+}
+.img_comp{
+    margin: 0px 60px 110px 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    img{
+    height: 132px;
+    width: 240px;
+    }
+    @include responsive(tablets){
+        margin: 150px 0px 0px 0px;
+        img{
+        height: 225px;
+        width: 415px;
+        } 
+    }
+    @include responsive(pc){
+        margin: 80px 30px 0px 0px;
+        float: right;
+        img{
+        height: 225px;
+        width: 415px;
+        } 
+    }
+    @include responsive(large_pc){
+        margin: 150px 90px 0px 0px;
+        float: right;
+        img{
+        height: 225px;
+        width: 415px;
+        } 
+    }
+}
+.screen_image{
+    margin: 0px 82px 0px 82px;
+    img{
+    height: 235px;
+    width: auto;
+    }
+    @include responsive(tablets){
+        margin: 150px 0px 0px 20px;
+        float: left;
+        img{
+        height: 300px;
+        width: auto;
+    }
+    }
+    @include responsive(pc){
+        margin: 150px 0px 0px 0px;
+        float: left;
+        img{
+        height: 300px;
+        width: auto;
+        margin: 60px
+    }
+    }
+    @include responsive(large_pc){
+        margin: 0px 0px 0px 0px;
+        width: 200px;
+        float: left;
+        img{
+        height: 500px;
+        width: auto;
+        margin: 150px;
+    }
+    }
+}
+.number_image{
+    float: left;
+    img{
+        width: 50px;
+        height: auto;
+        @include responsive(large_pc){
+            width: 67px;
+        }
+    }
+}
+.line{
+    &_right_first{
+        margin-left: 300px;
+        width: 200px;
+        float: right;
+        @include responsive(tablets){
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        @include responsive(pc){
+            margin-left: 0px;
+            visibility: hidden;
+            margin-top: 0px;
+        } 
+        @include responsive(large_pc){
+            margin-left: 0px;
+            visibility: hidden;
+        } 
+       
+    }
+    &_right{
+        margin-left: 300px;
+        width: 200px;
+        float: right;
+        @include responsive(tablets){
+            margin-left: 300px;
+        }
+        @include responsive(pc){
+            margin-left: 0px;
+            margin-top: 50px;
+            width: 350px;
+            height: auto;
+            float: left;
+        }
+        @include responsive(large_pc){
+            margin-top: 50px;
+            margin-right: 1000px;
+            width: 350px;
+            height: auto;
+            float: left;
+        }
+    }
+    &_right_ebook{
+        width: 200px;
+        float: right;
+        margin-left: 300px;
+        @include responsive(pc){
+            margin-left: 0px;
+            visibility: hidden;
+            margin-top: 0px;
+            height: auto;
+            float: left;
+        }
+        @include responsive(large_pc){
+            visibility: hidden;
+            margin-top: 0px;
+            height: auto;
+            float: left;
+        }
+    }
+    &_left{
+        margin-right: 300px;
+        width: 200px;
+        float: left;
+        @include responsive(tablets){
+            width: 200px;
+            margin-right: 300px;
+            height: auto;
+            float: left;
+        }
+        @include responsive(pc){
+            width: 350px;
+            margin-right: 0px;
+            height: auto;
+            float: right;
+        }
+        @include responsive(large_pc){
+            width: 350px;
+            margin-left: 1000px;
+            height: auto;
+            float: right;
+        }
+    }
+    &_left_ebook{
+        visibility: hidden;
+        @include responsive(pc){
+            margin-left: 500px;
+            visibility: visible;
+            width: 350px;
+            height: auto;
+            float: right;
+        }
+        @include responsive(large_pc){
+            margin-left: 0px;
+            visibility: visible;
+            width: 350px;
+            height: auto;
+            float: right;
+        }
+    }
+
+}
+.cross_img{
+    float: right;
+    img{
+        width: 48px;
+    }
+    @include responsive(tablets){
+        float: left;
+        margin-left: 25px;
+        margin-top: 0px;
+        img{
+            width: 48px;
+        }
+        }
+    @include responsive(large_pc){
+    float: left;
+    margin-left: 25px;
+    margin-top: 80px;
+    img{
+        width: 70px;
+    }
+    }
+}
+
+.squere{
+    visibility: hidden; 
+    height: 0px;
+    @include responsive(large_pc){
+    visibility: visible;
+    float: left;
+    margin-left: 50px;
+    margin-top: 185px;
+    width: 1000px;
+        img{
+            width: 80px;
+            transform: rotate(35deg)
+        } 
+    }
+}
+
+.triangle{
+    float: right;
+    margin-right: 10px;
+    img{
+        width: 48px;
+        transform: rotate(40deg)
+    }
+    @include responsive(large_pc){
+        margin-top: -500px;
+        margin-right: 50px;
+        img{
+            width: 100px;
+        }
+    }
+}
+.sector_bag{
+    height: auto;
+    @include responsive(tablets){
+        margin-top: 10px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+    @include responsive(pc){
+        margin-top: 10px;
+        margin-right: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        margin-top: 10px;
+        margin-right: 105px;
+        margin-bottom: 80px;
+        width: 500px;
+        float: right;
+    }
+}
+.sector_loupe{
+    height: auto;
+    @include responsive(tablets){
+        margin-top: 0px;
+        margin-left: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: left;
+    }
+    @include responsive(pc){
+        margin-top: 0px;
+        margin-left: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: left;
+    }
+    @include responsive(large_pc){
+        margin-top: 120px;
+        margin-left: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: left;
+    }
+}
+.sector_stocks{
+    height: auto;
+    @include responsive(tablets){
+        margin-top: 0px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+    @include responsive(pc){
+        margin-top: 100px;
+        margin-right: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        margin-top: 100px;
+        margin-right: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+}
+.sector_numbers{
+    height: auto;
+    @include responsive(tablets){
+        margin: 0px 50px 0px 105px;
+        float: left;
+    }
+    @include responsive(pc){
+        margin: 10px 100px 0px 105px;
+        float: left;
+        width: 50%;
+    }
+    @include responsive(large_pc){
+        margin: 10px 100px 0px 5px;
+        float: left;
+        width: 1000px;
+    }
+}
+.sector_ebook{
+    height: auto;
+    @include responsive(tablets){
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 500px;
+        justify-content: right;
+        float: right;
+    }
+    @include responsive(pc){
+        margin-top: 0px;
+        margin-right: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+    @include responsive(large_pc){
+        margin-top: 0px;
+        margin-right: 105px;
+        margin-bottom: 0px;
+        width: 500px;
+        float: right;
+    }
+}
+.flax_list{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 10px;
+    @include responsive(tablets){
+        float: left;
+        margin-left: 200px;
+        margin-bottom: 40px;
+        padding-top: 30px;
+    }
+    @include responsive(pc){
+        flex-direction: unset;
+        flex-wrap: wrap;
+        float: left;
+        margin-left: 95px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        width: 82%;
+        
+    }
+    @include responsive(large_pc){
+        flex-direction: unset;
+        flex-wrap: wrap;
+        float: left;
+        margin-left: 160px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        width: 82%;
+        
+    }
+}
+.list_text{
+    width: 100%;
+    margin-left: 35px;
+    @include responsive(pc){
+        width: 50%;
+        margin-left: 0px;
+        padding-top: 12px;
+    }
+    @include responsive(large_pc){
+        width: 50%;
+        margin-left: 0px;
+        padding-top: 12px;
+    }
+}
+.list_text_top{
+    width: 100%;
+    margin-left: 35px;
+    h4{
+        margin-top: 17px;
+    }
+    
+    @include responsive(pc){
+        width: 50%;
+        margin-left: 0px;
+        padding-top: 12px;
+        h4{
+            margin-top: 25px;
+        }
+    }
+    @include responsive(large_pc){
+        width: 50%;
+        margin-left: 0px;
+        padding-top: 12px;
+        h4{
+            margin-top: 25px;
+        }
+    }
+}
+.block{
+    &_bag{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 415px;
+        @include responsive(tablets){
+            max-width: 768px;
+            height: 350px;
+        }
+        @include responsive(pc){
+            max-width: 992px;
+            height: 400px;
+        }
+        @include responsive(large_pc){
+            height: 520px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_loupe{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        height: 370px;
+        @include responsive(tablets){
+            max-width: 768px;
+            height: 320px;
+        }
+        @include responsive(pc){
+            max-width: 992px;
+            height: 420px;
+        }
+        @include responsive(large_pc){
+            height: 530px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_stocks{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        height: 270px;
+        @include responsive(tablets){
+            max-width: 768px;
+            height: 250px;
+        }
+        @include responsive(pc){
+            max-width: 992px;
+            height: 400px;
+        }
+        @include responsive(large_pc){
+            height: 480px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_numbers{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        height: 580px;
+        @include responsive(tablets){
+            max-width: 768px;
+            height:600px;
+        }
+        @include responsive(pc){
+            max-width: 992px;
+            height: 450px;
+        }
+        @include responsive(large_pc){
+            height: 520px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_ebook{
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        height: 870px;
+        @include responsive(tablets){
+            max-width: 768px;
+            height: 670px;
+        }
+        @include responsive(pc){
+            max-width: 992px;
+            height: 770px;
+        }
+        @include responsive(large_pc){
+            height: 740px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.title_text{
+    &_right{
+    float: left;
+    color: $orange;
+    padding-top: 45px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include responsive(tablets){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    @include responsive(pc){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    @include responsive(large_pc){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    }
+    &_left{
+    float: left;
+    color: $orange;
+    padding-top: 45px;
+    margin-left: 16px;
+    margin-right: 15px;
+    @include responsive(tablets){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    @include responsive(pc){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    @include responsive(large_pc){
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+    }
+    &_left_footer{
+        float: left;
+        color: $orange;
+        padding-top: 45px;
+        margin-left: 16px;
+        margin-right: 15px;
+        padding-bottom: 45px;
+        @include responsive(tablets){
+            margin-left: 115px;
+            margin-right: 105px; 
+            padding-top: 30px; 
+        }
+        @include responsive(pc){
+            margin-left: 255px;
+            margin-right: 255px; 
+            padding-top: 100px; 
+        }
+        @include responsive(large_pc){
+            margin-left: 355px;
+            margin-right: 355px; 
+            padding-top: 100px; 
+        }
+        }
+}
+
+.title_ebook{
+    color: $black;
+    padding-top: 30px;
+    margin-left: -20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+    @include responsive(tablets){
+        margin-left: -10px;
+        padding-top: 0px;
+        margin-right: 0px;
+        padding-bottom: 20px;
+    }
+    @include responsive(pc){
+        margin-left: -50px;
+        padding-top: 20px;
+    }
+    @include responsive(large_pc){
+        margin-left: -50px;
+        padding-top: 20px;
+    }
+}
+.description{
+    &_text_right{
+        margin: 35px 15px 45px 0px;
+        float: right;
+        width: 217px; 
+        @include responsive(tablets){
+            margin: 45px 0px 45px 0px;
+            float: right;
+            width: auto; 
+        }
+        @include responsive(pc){
+            margin: 45px 0px 45px 0px;
+            float: right;
+            width: auto; 
+        }
+        @include responsive(large_pc){
+            margin: 45px 0px 45px 0px;
+            float: right;
+            width: auto; 
+        }
+
+    }
+    &_text_left{
+        margin: 35px 0px 45px 15px;
+        font-size: 12px;
+        float: left;
+        width: 217px;
+        @include responsive(tablets){
+            margin: 45px 0px 45px 0px;
+            float: left;
+            width: auto; 
+        }
+        @include responsive(pc){
+            margin: 45px 0px 45px 0px;
+            float: left;
+            width: auto; 
+        }
+        @include responsive(large_pc){
+            margin: 45px 0px 45px 0px;
+            float: left;
+            width: auto; 
+        }
+    }
+    &_text_left_footer{
+        margin: 35px 200px 0px 15px;
+        font-size: 12px;
+        float: left;
+        width: 217px;
+        @include responsive(tablets){
+            margin: 45px 555px 0px 305px;
+            font-size: 15px;
+            float: left;
+            width: auto; 
+        }
+        @include responsive(pc){
+            margin: 45px 555px 0px 355px;
+            font-size: 20px;
+            float: left;
+            width: auto; 
+        }
+        @include responsive(large_pc){
+            margin: 45px 555px 0px 355px;
+            font-size: 20px;
+            float: left;
+            width: auto; 
+        }
+    }
+    &_text_center{
+        margin: 35px 16px 10px 15px;
+        float: left;
+        @include responsive(tablets){
+            margin: 45px 0px 10px 0px;
+            float: left; 
+            width: 550px;
+        }
+        @include responsive(pc){
+            margin: 45px 0px 10px 0px;
+            float: left; 
+            width: 750px;
+        }
+        @include responsive(large_pc){
+            margin: 45px 0px 10px 0px;
+            float: left; 
+            width: 1080px;
+        }
+    }
+    &_text_center_ebook{
+        margin: 35px 16px 10px 15px;
+        float: left;
+        @include responsive(tablets){
+            margin: 45px 80px 10px 120px;
+            float: left; 
+        }
+        @include responsive(pc){
+            margin: 45px 0px 10px 0px;
+            float: left; 
+        }
+        @include responsive(large_pc){
+            margin: 45px 0px 10px 0px;
+            float: left; 
+            width: 500px;
+        }
+    }
+    &_text_center_ebook_down{
+        margin: 35px 16px 10px 15px;
+        float: left;
+        @include responsive(tablets){
+            margin: 10px 80px 10px 300px;
+            float: right; 
+            width: 300px;
+        }
+        @include responsive(pc){
+            margin: 10px 100px 10px 0px;
+            float: right; 
+            width: 500px;
+        }
+        @include responsive(large_pc){
+            margin: 40px 100px 10px 300px;
+            float: right; 
+            width: 500px;
+        }
+    }
+}
+.list_ebook{
+    font-size: 12px;
+    margin-right: 20px;
+    float: right;
+    width: 300px;
+    @include responsive(tablets){
+        margin-left: 50px;
+        margin-right: 60px;
+        font-size: 13px;
+        float: right;
+    }
+    @include responsive(pc){
+        margin-left: 50px;
+        font-size: 15px;
+        float: left;
+    }
+    @include responsive(large_pc){
+        margin-left: 50px;
+        font-size: 15px;
+        float: left;
+    }
+}
+.screen_download{
+    float: left;
+    @include responsive(tablets){
+        float: left;
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        img{
+            height: 330px;
+            width: auto;
+        }
+    }
+    @include responsive(pc){
+        float: left;
+        margin-left: 130px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        img{
+            height: 330px;
+            width: auto;
+        }
+    }
+    @include responsive(large_pc){
+        float: left;
+        width: 200px;
+    }
+}
+.bag_img{
+    float: left;
+    margin-top: 90px;
+    margin-left: 30px;
+    img{
+        height: 110px;
+        width: auto;
+    }
+    @include responsive(tablets){
+        float: left;
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-bottom: 80px;
+        img{
+            height: 150px;
+            width: auto;
+        }
+    }
+    @include responsive(pc){
+    float: left;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    img{
+        height: 250px;
+        width: auto;
+    }
+    }
+    @include responsive(large_pc){
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-bottom: 80px;
+    img{
+        height: 350px;
+        width: auto;
+    }
+    }
+}
+.loupe_img{
+    float: right;
+    margin-right: 10px;
+    margin-top: 70px;
+    img{
+        height: 100px;
+        width: auto;
+    }
+    @include responsive(tablets){
+        float: right;
+        margin-right: 0px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        img{
+            height: 125px;
+            width: auto;
+        }
+    }
+    @include responsive(pc){
+        float: right;
+        margin-right: 30px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        img{
+            height: 215px;
+            width: auto;
+        }
+    }
+    @include responsive(large_pc){
+    float: right;
+    margin-right: 150px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    img{
+        height: 315px;
+        width: auto;
+    }
+    }
+
+}
+.stocks_img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    img{
+        height: 100px;
+        width: auto;
+    }
+    @include responsive(tablets){
+        float: left;
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        img{
+            height: 150px;
+            width: auto;
+        }
+    }
+    @include responsive(pc){
+        float: left;
+        margin-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        img{
+            height: 230px;
+            width: auto;
+        }
+    }
+    @include responsive(large_pc){
+        float: left;
+        margin-left: 130px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        img{
+            height: 330px;
+            width: auto;
+        }
+    }
+}
+.btn_download{
+    margin-left: 102px;
+    margin-right: 102px;
+    a{
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 40px;
+        background-color: $white;
+        color: $orange;
+        border: 1.5px solid $orange;
+        border-color: $orange;
+        text-decoration: none;
+        padding: 5px 30px 5px 30px;
+        border-radius: 100px;
+        &:hover{
+            background-color: #E89A81;
+            color:$white; 
+        }
+
+    }
+    @include responsive(tablets){
+        visibility: hidden;
+        margin-left: 0px;
+        margin-right: 0px;
+        a{
+            font-size: 0px;
+            font-weight: 0;
+            margin-top: 0px;
+            background-color: $white;
+            color: $orange;
+            border: 1.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 0px 00px 0px 0px;
+            border-radius: 0px;
+            &:hover{
+                background-color: #E89A81;
+                color:$white;
+            }
+        }
+    }
+    @include responsive(pc){
+        visibility: hidden;
+        margin-left: 0px;
+        margin-right: 0px;
+        a{
+            font-size: 0px;
+            font-weight: 0;
+            margin-top: 0px;
+            background-color: $white;
+            color: $orange;
+            border: 1.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 0px 00px 0px 0px;
+            border-radius: 0px;
+            &:hover{
+                background-color: #E89A81;
+                color:$white;
+                
+            }
+    
+        }
+    }
+}
+.btn_download_biger{
+    @include responsive(tablets_min){
+        visibility: hidden;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        a{
+            font-size: 0px;
+            font-weight: 0;
+            margin-top: 0px;
+            background-color: $white;
+            color: $orange;
+            border: 2.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 0px 0px 0px 0px;
+            border-radius: 100px;
+            &:hover{
+                background-color: #E89A81;
+                color:$white;
+            }
+        }
+    }
+    @include responsive(tablets){
+        margin-top: 85%;
+        margin-left: 40%;
+        a{
+            font-size: 10px;
+            font-weight: 600;
+            margin-top: 40px;
+            background-color: $white;
+            color: $orange;
+            border: 1.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 10px 40px 10px 40px;
+            border-radius: 100px;
+            &:hover{
+            background-color: #E89A81;
+            color:$white; 
+        }
+        }
+    }
+    @include responsive(pc){
+        margin-top: 70%;
+        margin-left: 37%;
+        a{
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 40px;
+            background-color: $white;
+            color: $orange;
+            border: 2.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 15px 70px 15px 70px;
+            border-radius: 100px;
+            &:hover{
+                background-color: #E89A81;
+                color:$white;
+            }
+        }
+    }
+    @include responsive(large_pc){
+        margin-top: 60%;
+        margin-left: 37%;
+        a{
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 40px;
+            background-color: $white;
+            color: $orange;
+            border: 2.5px solid $orange;
+            border-color: $orange;
+            text-decoration: none;
+            padding: 15px 70px 15px 70px;
+            border-radius: 100px;
+            &:hover{
+                background-color: #E89A81;
+                color:$white;
+            }
+        }
+    }
+}
+.contact{
+    color: $orange;
+    font-size: 15px;
+    font-weight: 700;
+    @include responsive(pc){
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    @include responsive(large_pc){
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+//form
+
+form {
+    margin: 3% 10%;
+    max-width: 100%;
+    padding: 0px 0px 6px 0px;
+    border: 0;
+}
+input[type=submit] {
+    cursor:pointer;
+}
+input[type="text"]::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #f3c1b0;
+    font-weight: 500;
+    font-size: 15px;
+}
+a { 
+    text-decoration: none;
+ }
+input.form-control {
+    width: 90%;
+    height: 48px;
+    display:block;
+    font-size:18px;
+    font-weight: 300;    
+    color: $orange;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    background-color: $orange;
+    background: $white; 
+    border-radius: 20px;
+    border: solid $orange;
+    border-width: 2px;
+}
+@media screen and (min-width: 992px) {
+  input.form-control{
+    width: 100%;
+    height: 48px;
+    display:block;
+    font-size:18px;
+    font-weight: 300;    
+    color:$orange;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    background-color: $orange;
+    border-radius: 20px;
+    background: $white; 
+    padding-left:25px;
+    border-radius: 20px;
+  }
+}
+@include responsive(large_pc){
+    input.form-control {
+        width: 500px;
+    }
+}
+button.btn {
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-left: 43px;
+    margin-right: auto;
+    margin-bottom: 5%;
+    position: static;
+    background-color: $white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid $orange;
+    border-width: 2px;
+    span{
+        margin-top: 12px;
+        color: $orange;
+    }
+    &:hover{
+        background-color: #E89A81;
+        span{
+                color:$white; 
+            } 
+    }
+    @include responsive(tablets){
+        justify-content: center;
+        display: flex;
+        width: 300px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        position: static;
+        background-color: $white;
+        border-radius: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        border: solid $orange;
+        border-width: 2px;
+        span{
+            margin-top: 12px;
+            color: $orange;
+        }
+        &:hover{
+            background-color: #E89A81;
+            span{
+                    color:$white; 
+                } 
+        }
+    }
+    @include responsive(large_pc){
+        float: right;
+        margin-top: -290px;
+    }
+}
+.che{
+  height: auto;
+  margin-left: 10px;
+  padding-bottom: 10%;
+  @include responsive(large_pc){
+      float: right;
+      margin-top: -60px;
+      width: 300px;
+      text-align: center;
+  }
+}
+textarea::-webkit-input-placeholder {
+    height: 350px;
+    font-size: 20px;
+    color: #E89A81!important;
+    }
+  
+  textarea{
+    font-family: 'Open Sans', sans-serif;
+    border: solid $orange;
+      border-width: 2px;
+      background: $white; 
+      resize: none;
+      width: 90%;
+      height: 250px;
+      font-size:18px;
+      font-weight: 400;
+      color: $orange;
+      padding-left:25px;
+      padding-right:20px;
+      padding-top:12px;
+      margin-bottom:20px;
+      border-radius: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    textarea {
+      background: $white; 
+      width: 100%;
+      height: 250px;
+      font-family: 'Open Sans', sans-serif;
+      font-size:18px;
+      color: $orange;
+      padding-left:25px;
+      padding-right:20px;
+      padding-top:12px;
+      margin-bottom:20px;
+      border-radius: 20px;
+    }
+    @include responsive(large_pc){
+        textarea{
+        width: 500px;
+        }
+    }
+}
+
+  #welcomeDivGratulation{
+    max-width: 320px;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    z-index: 999999;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid $orange;
+    padding-top: 0px;
+    position: absolute;
+    top: 20%;
+    height:500px;
+    width:340px;     
+    transition:all .7s ease-out;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .close_button{
+    width: 27px;
+    position: absolute;
+    height: 27px;
+    position: static;
+    background-color: $orange;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    border: 0;
+  
+  }
