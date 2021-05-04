@@ -147,9 +147,7 @@
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
          
-        <a href="Index.html" download>
          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
-        </a>
         </form>
         <a href="Index.html">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
