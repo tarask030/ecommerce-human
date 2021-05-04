@@ -147,7 +147,7 @@
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
          
-        <a href="downloads/E-book.pdf" download>
+        <a href="Index.html" download>
          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
         </a>
         </form>
