@@ -8,6 +8,7 @@ body {
   background-repeat: repeat-y;
   font-family: 'Montserrat', sans-serif;
 }
+
 @media only screen and (min-width: 1200px) {
   body {
     background-image: url(images/background1200.png);
@@ -393,11 +394,7 @@ li span {
     float: left;
   }
 }
-.agree{
-  font-style: normal;
-  color: #EB4E1D;
-  font-weight: 600;
-  
+
 .img_comp {
   margin: 0px 60px 110px 60px;
   -webkit-box-pack: center;
@@ -1957,7 +1954,7 @@ button.btn {
 }
 
 button.btn span {
-  margin-top: 15px;
+  margin-top: 12px;
   color: #EB4E1D;
 }
 
@@ -1985,13 +1982,13 @@ button.btn:hover span {
     position: static;
     background-color: #ffffff;
     border-radius: 30px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
     border: solid #EB4E1D;
     border-width: 2px;
   }
   button.btn span {
-    margin-top: 15px;
+    margin-top: 18px;
     color: #EB4E1D;
   }
   button.btn:hover {
@@ -2069,10 +2066,10 @@ textarea::-webkit-input-placeholder {
     width: 600px;
   }
 }
+
 .btn_thanku {
-  width: 313px;
+  width: 335px;
   margin-top: 100px;
-  margin-buttom: 100px;
   margin-left: auto;
   margin-right: auto;
 }
