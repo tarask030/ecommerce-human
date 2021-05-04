@@ -146,9 +146,8 @@
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
-          <a href="downloads/E-book.pdf" download>
+          <a href="downloads/E-book.pdf" download></a>
          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
-         </a>
         </form>
         <a href="https://www.ecommerce.humanit.group/">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
