@@ -47,7 +47,6 @@ body {
     margin-right: auto;
   }
 }
-
 .footer {
   position: static;
   top: 0;
@@ -2027,6 +2026,80 @@ textarea::-webkit-input-placeholder {
   font-size: 20px;
   color: #E89A81 !important;
 }
+
+
+
+
+
+.thanku_text {
+  width: 360px;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.thanku_text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .thanku_text {
+    width: 600px;
+  }
+  .thanku_text h2 {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .thanku_text {
+    width: 600px;
+  }
+  .thanku_text h2 {
+    width: 600px;
+  }
+}
+
+.btn_thanku {
+  width: 335px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn_thanku a {
+  font-family: 'Montserrat', sans-serif;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  color: #EB4E1D;
+  border: 3px solid #EB4E1D;
+  border-color: #EB4E1D;
+  text-decoration: none;
+  padding: 14px 67px 12px 67px;
+  border-radius: 100px;
+}
+
+.btn_thanku a:hover {
+  background-color: #E89A81;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
 
 textarea {
   font-family: 'Open Sans', sans-serif;
