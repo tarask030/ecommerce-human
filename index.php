@@ -147,7 +147,7 @@
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
           
-         <button type = "submit" class= "btn btn-primary" onclick="window.open('downloads/E-book.pdf')"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+         <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
         </form>
         <a href="https://www.ecommerce.humanit.group/">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
