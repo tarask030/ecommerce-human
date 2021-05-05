@@ -2010,6 +2010,10 @@ button.btn:hover span {
   height: auto;
   margin-left: 10px;
   padding-bottom: 10%;
+  font-size: 8px;
+}
+.agree{
+  color: #EB4E1D;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2017,7 +2021,7 @@ button.btn:hover span {
     float: right;
     margin-top: -60px;
     width: 300px;
-    text-align: center;
+    text-align: justify;
   }
 }
 
