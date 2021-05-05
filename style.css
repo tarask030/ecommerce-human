@@ -47,6 +47,37 @@ body {
     margin-right: auto;
   }
 }
+.header_agree {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 315px;
+  position: static;
+  top: 0;
+  left: 0;
+}
+@media only screen and (min-width: 768px) {
+  .header_agree {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 315px;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_agree {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 315px;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
 .footer {
   position: static;
   top: 0;
@@ -115,6 +146,40 @@ body {
   }
 }
 
+.logo_main_agree {
+  margin-top: 94px;
+  margin-bottom: 88px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo_main_agree {
+    margin-left: 0px;
+    margin-top: 104px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo_main_agree {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 104px;
+    margin-top: 104px;
+  }
+}
 .logo_footer img {
   width: 140px;
   height: auto;
@@ -341,6 +406,10 @@ li span {
   li {
     margin-bottom: 20px;
   }
+}
+
+.agree{
+  color: #EB4E1D;
 }
 
 .medium {
@@ -2015,7 +2084,7 @@ button.btn:hover span {
 @media only screen and (min-width: 1200px) {
   .che {
     float: right;
-    margin-top: -60px;
+    margin-top: 90px;
     width: 300px;
     text-align: center;
   }
@@ -2027,6 +2096,37 @@ textarea::-webkit-input-placeholder {
   color: #E89A81 !important;
 }
 
+.agree_main_text{
+  width: 350px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.text_agree{
+  text-align: justify;
+  width: 350px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 768px) {
+  .text_agree{
+    width: 700px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text_agree{
+    width: 1000px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 
