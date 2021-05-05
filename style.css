@@ -2335,3 +2335,37 @@ textarea {
     left: 0;
   }
 }
+.logo_main_agree {
+  margin-top: 94px;
+  margin-bottom: 88px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo_main_agree {
+    margin-left: 0px;
+    margin-top: 104px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo_main_agree {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 104px;
+    margin-top: 104px;
+  }
+}
