@@ -142,7 +142,7 @@
           <input type="text" name="user_email" placeholder="Adress e-mail" class="form-control" type="email" required />
           <input type="text" name="user_phone" placeholder="Numer telefonu" class="form-control" type="phone" required />
           <textarea rows="4" cols="50" type = "text" name="user_text" class="message" required></textarea>
-          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> zgoda na przetwarzanie <a class = "agree" href="agree.html">danych osobowych</a></div>
+          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> zgoda na przetwarzanie <a class = "agree" href="https://reseller.humanit.group/polityka-prywatnosci-2/">danych osobowych</a></div>
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
