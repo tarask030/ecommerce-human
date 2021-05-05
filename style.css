@@ -2071,7 +2071,8 @@ button.btn:hover span {
 @media only screen and (min-width: 1200px) {
   button.btn {
     float: right;
-    margin-top: -290px;
+    margin-top: unset;
+    margin-right: -300px;
   }
 }
 
@@ -2088,7 +2089,7 @@ button.btn:hover span {
     float: right;
     margin-top: 90px;
     width: 300px;
-    text-align: center;
+    text-align: justify;
   }
 }
 
