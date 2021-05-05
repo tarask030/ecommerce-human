@@ -151,9 +151,26 @@
           
           <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
         </form>
+
+        <div class="cookie-container">
+                <div class = cookies_block>
+                    <p>
+                       Strona wykorzystuje pliki cookie. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce. 
+                       Pełna treść:
+                           <a href="cookies.php">Polityka cookies</a>
+                       </p>
+                    <div class="btn_cookies">
+                        <button class="cookie-btn">
+                               Rozumiem
+                        </button>
+                    </div>
+                </div>
+           </div>
+
         <a href="https://www.ecommerce.humanit.group/">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
       </a>
     </div>
+   <script src="main.js"></script>
   </body>
 </html>
