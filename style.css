@@ -2083,6 +2083,11 @@ button.btn:hover span {
   font-size: 7px;
   width: 300px;
 }
+@media only screen and (min-width: 768px) {
+  .che {
+    width: 600px;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
   .che {
