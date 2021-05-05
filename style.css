@@ -47,37 +47,6 @@ body {
     margin-right: auto;
   }
 }
-.header_agree {
-  max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 315px;
-  position: static;
-  top: 0;
-  left: 0;
-}
-@media only screen and (min-width: 768px) {
-  .header_agree {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 315px;
-    position: static;
-    top: 0;
-    left: 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .header_agree {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 315px;
-    position: static;
-    top: 0;
-    left: 0;
-  }
-}
 .footer {
   position: static;
   top: 0;
@@ -146,40 +115,6 @@ body {
   }
 }
 
-.logo_main_agree {
-  margin-top: 94px;
-  margin-bottom: 88px;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media only screen and (min-width: 992px) {
-  .logo_main_agree {
-    margin-left: 0px;
-    margin-top: 104px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .logo_main_agree {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-left: 104px;
-    margin-top: 104px;
-  }
-}
 .logo_footer img {
   width: 140px;
   height: auto;
@@ -406,10 +341,6 @@ li span {
   li {
     margin-bottom: 20px;
   }
-}
-
-.agree{
-  color: #EB4E1D;
 }
 
 .medium {
@@ -2071,8 +2002,7 @@ button.btn:hover span {
 @media only screen and (min-width: 1200px) {
   button.btn {
     float: right;
-    margin-top: unset;
-    margin-right: -300px;
+    margin-top: -290px;
   }
 }
 
@@ -2080,21 +2010,14 @@ button.btn:hover span {
   height: auto;
   margin-left: 10px;
   padding-bottom: 10%;
-  font-size: 7px;
-  width: 300px;
-}
-@media only screen and (min-width: 768px) {
-  .che {
-    width: 600px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   .che {
     float: right;
-    margin-top: 90px;
+    margin-top: -60px;
     width: 300px;
-    text-align: justify;
+    text-align: center;
   }
 }
 
@@ -2104,40 +2027,6 @@ textarea::-webkit-input-placeholder {
   color: #E89A81 !important;
 }
 
-.agree_main_text{
-  width: 350px;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.check_b{
-  margin-top: 20px;
-}
-.text_agree{
-  text-align: justify;
-  width: 350px;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-}
-@media only screen and (min-width: 768px) {
-  .text_agree{
-    width: 700px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .text_agree{
-    width: 1000px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 
 
@@ -2291,3 +2180,92 @@ textarea {
   border: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+.wrapper {
+  padding: 32px;
+}
+
+.cookie-container {
+  position: fixed;
+  z-index: 999;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 30px 10px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+.cookies_block{
+  text-align: center;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .cookies_block{
+  width: 700px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cookies_block{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cookies_block p a{
+  color: #EB4E1D;
+}
+.btn_cookies{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cookie-btn {
+  background: #EB4E1D;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.information{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  text-align: left;
+  
+}
+@media only screen and (min-width: 768px) {
+  .information{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    text-align: justify;
+    
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .information{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    text-align: justify;
+    
+  }
+}
