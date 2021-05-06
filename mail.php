@@ -39,10 +39,7 @@ if(!$mail->send()) {
     echo
     '<script>
 function myFunction() {
-	var xhReq = new XMLHttpRequest();
-	xhReq.open("GET", "https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb", false);
-       	if (xhReq.status === 200){
-	alert("Hello! I am an alert box!!");
+	window.open("https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb");
        }
    myFunction();
 
