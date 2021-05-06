@@ -14,8 +14,8 @@ $text = $_POST['user_text'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'tkram00@mail.ru'; // login
-$mail->Password = 'goAPRP2f3vr)'; // password our mail
+$mail->Username = 'humanitgroup@mail.ru'; // login
+$mail->Password = 'h5Hj4DHNzG'; // password our mail
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / this port change for each mail provider 
 
