@@ -149,7 +149,7 @@
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
           
-          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+          <button type = "submit" onclick = "myFunction()" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
         </form>
 
         <div class="cookie-container">
