@@ -39,7 +39,7 @@ if(!$mail->send()) {
     echo
         '<script>
         function myFunction() {
-	        window.open("https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb",'_self',false);
+	        window.open("https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb","_self",false);
          }
          myFunction();
         </script>';
