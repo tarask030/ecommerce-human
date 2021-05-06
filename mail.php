@@ -36,7 +36,7 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header("refresh: 5; url=http://google.ru/");
+    header("refresh: 1; url=thanku.html");
     //header('location: thanku.html');
 }
 ?>
