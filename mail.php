@@ -19,7 +19,7 @@ $mail->Password = 'h5Hj4DHNzG'; // password our mail
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / this port change for each mail provider 
 
-$mail->setFrom('tkram00@mail.ru'); // mail send
+$mail->setFrom('humanitgroup@mail.ru'); // mail send
 $mail->addAddress('taras.kram@humanit.group');     // mail get
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
