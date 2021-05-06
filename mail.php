@@ -41,12 +41,13 @@ if(!$mail->send()) {
 		function myFunction() {
             var xhReq = new XMLHttpRequest();
             xhReq.open("GET", "https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb", true);
-            xhReq.send(null);
+            
             var serverResponse = xhReq.responseText;
         }
         myFunction();
 	</script>';
-    header('location: thanku.html');
+	//xhReq.send(null);
+    //header('location: thanku.html');
     //header('location: https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb');
     //header("refresh: 1; url=thanku.html");
     //header('location: thanku.html');
