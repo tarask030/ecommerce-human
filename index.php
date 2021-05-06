@@ -148,14 +148,7 @@
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
-
-          <scirpt>
- function myFunction() {
-	window.open("https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb");
-       }
- </script>
-
-          <button type = "submit" onclick = "myFunction()" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
 
         </form>
 
