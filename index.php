@@ -11,7 +11,7 @@
   <body>
 
     <div class= "header">
-      <a href="https://www.ecommerce.humanit.group/">
+      <a href="Index.html">
         <div class="logo_main"><img src="images/humanit_lable.svg" alt="image"></div>
      </a>
       <div class="slogan_main">
@@ -142,35 +142,35 @@
           <input type="text" name="user_email" placeholder="Adress e-mail" class="form-control" type="email" required />
           <input type="text" name="user_phone" placeholder="Numer telefonu" class="form-control" type="phone" required />
           <textarea rows="4" cols="50" type = "text" name="user_text" class="message" required></textarea>
-          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> Wyrażam zgodę na przetwarzanie moich danych osobowych (adresu e-mail, imienia, numeru telefonu) zawartych w zgłoszeniu, w związku z art. 6 ust. 1 lit. a) rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO). W każdym momencie mogę wycofać zgodę wypisując się z newslettera.
-
-           </br></br> Administratorem danych osobowych zawartych w zgłoszeniu jest HUMAN SERVICES WITH POWER SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA 0000767522 6922519943 Dane osobowe są przetwarzane w celu dostarczenia newslettera, na podstawie art. 6 ust. 1 lit. a) rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO). Wnioskodawca ma prawo do dostępu do swoich danych osobowych, ich sprostowania oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Podanie danych osobowych jest dobrowolne, ich niepodanie będzie skutkowało brakiem możliwości skorzystania z usługi newslettera. Więcej informacji o przetwarzaniu danych znajdziesz w naszej <a class = "agree" href="https://reseller.humanit.group/polityka-prywatnosci-2/">polityce prywatności</a></div>
+          <div class="che"><input type="checkbox" class = "check_b" name ="agree"> Zgoda na pzetwarzanie danych osobowych</div>
         <div id="welcomeDiv"  style="display:none;" class="answer_list">
           <button type = "button" onclick = "hideDiv()" class= "close_button">X</button>    
         </div>
-          
-          <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
-        </form>
+        <a href="downloads/E-book">
+        <button type = "submit" class= "btn btn-primary"><span class="Outsourcing1">POBIERZ TERAZ</span></button>
+      </a>
+      </form>
 
-        <div class="cookie-container">
-                <div class = cookies_block>
-                    <p>
-                       Strona wykorzystuje pliki cookie. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce. 
-                       Pełna treść:
-                           <a href="agree.html">Polityka cookies</a>
-                       </p>
-                    <div class="btn_cookies">
-                        <button class="cookie-btn">
-                               Rozumiem
-                        </button>
-                    </div>
-                </div>
-           </div>
 
-        <a href="https://www.ecommerce.humanit.group/">
+      <div class="cookie-container">
+        <div class = cookies_block>
+            <p>
+               Strona wykorzystuje pliki cookie. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce. 
+               Pełna treść:
+                   <a href="cookies.php">Polityka cookies</a>
+               </p>
+            <div class="btn_cookies">
+                <button class="cookie-btn">
+                       Rozumiem
+                </button>
+            </div>
+        </div>
+   </div>
+   
+        <a href="Index.html">
         <div class="logo_footer"><img src="images/humanit_lable.svg" alt="image"></div>
       </a>
     </div>
-   <script src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
