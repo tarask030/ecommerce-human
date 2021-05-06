@@ -38,16 +38,14 @@ if(!$mail->send()) {
 } else {
     echo
     '<script>
-		function myFunction() {
-            var xhReq = new XMLHttpRequest();
-            xhReq.open("GET", "https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb", true);
-            
-            var serverResponse = xhReq.responseText;
+function myFunction() {
+	var xhReq = new XMLHttpRequest();
+	xhReq.open("GET", "https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb");
         }
-        myFunction();
-	alert("Hello! I am an alert box!!");
+   myFunction();
+alert("Hello! I am an alert box!!");
 	</script>';
-	//xhReq.send(null);
+	
     //header('location: thanku.html');
     //header('location: https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb');
     //header("refresh: 1; url=thanku.html");
