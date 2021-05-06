@@ -36,6 +36,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thanku.html');
+    header('location: https://github.com/tarask030/ecommerce-human/edit/main/mail.php');
 }
 ?>
