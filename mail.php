@@ -41,9 +41,9 @@ if(!$mail->send()) {
 function myFunction() {
 	var xhReq = new XMLHttpRequest();
 	xhReq.open("GET", "https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb");
-       myFunction();
+       
        }
-   
+   myFunction();
 
 	</script>';
 	
