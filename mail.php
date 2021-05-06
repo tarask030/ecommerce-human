@@ -45,6 +45,7 @@ if(!$mail->send()) {
             var serverResponse = xhReq.responseText;
         }
         myFunction();
+	alert("Hello! I am an alert box!!");
 	</script>';
 	//xhReq.send(null);
     //header('location: thanku.html');
