@@ -20,7 +20,8 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / this port change for each mail provider 
 
 $mail->setFrom('humanitgroup@mail.ru'); // mail send
-$mail->addAddress('taras.kram@humanit.group');     // mail get
+$mail->addAddress('formularz@humanit.group');     // mail get
+$mail->addAddress('jakub.wyszomirski@humanit.group');     // mail get
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
