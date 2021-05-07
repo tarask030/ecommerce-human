@@ -36,19 +36,20 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-	//header("refresh: 1; url=thanku.html");
     echo
-        //'<script>
+	'<iframe src="https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb"></iframe>';
+        header("refresh: 1; url=thanku.html");
+	//'<script>
       //  function myFunction() {
 	      //  window.open("https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb","_self",false);
         // }
         // myFunction();
      //   </script>';
-    '<iframe src="https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb"></iframe>';
+    
      
     //header('location: thanku.html');
     //header('location: https://solutions4ad.com/partner/scripts/l2d1sz5?AccountId=2361fbf0&TotalCost=0&OrderID= ' .$phone. ' &ActionCode=Humanit_CPS&CampaignID=e95d00cb');
-    header("refresh: 1; url=thanku.html");
+    
    //header('location: thanku.html');
 }
 ?>
