@@ -56,6 +56,8 @@ $text = $_POST['user_text'];
 //     print_r($result->getError());
 //     };
 
+    $mail = new PHPMailer;
+    $mail->CharSet = 'utf-8';
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
