@@ -1,6 +1,11 @@
 <?php 
 require_once 'livespace.php';
+require_once 'phpmailer/PHPMailerAutoload.php';
 
+$name = $_POST['user_name'];
+$email = $_POST['user_email'];
+$phone = $_POST['user_phone'];
+$text = $_POST['user_text'];
 
     print_r($_POST);
     echo ('result1');
@@ -50,4 +55,22 @@ $contactData = array(
     echo 'Wystąpił błąd #' . $result->getResult() . ":\r\n";
     print_r($result->getError());
     };
+
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'humanitgroup@mail.ru'; // login
+    $mail->Password = 'IyPTT41uusu:'; // password our mail
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
+    $mail->Port = 465; 
+
+    $mail->setFrom('humanitgroup@mail.ru'); // mail send
+    $mail->addAddress('taras.kram@humanit.group');     // mail get
+    $mail->isHTML(true);                                  // Set email format to HTML
+
+    $mail->Subject = 'Zgloszenie od klienta';
+    $mail->Body    = '' .$name. ' zostawil zgloszenie, numer tefonu: ' .$phone. '<br>adres mailowy: ' .$email. ' tekst zgloszenia: <br>' .$text;
+    $mail->AltBody = '';
+
+    $mail->send();
 ?>
