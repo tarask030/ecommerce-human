@@ -67,7 +67,7 @@ $contactData = array(
     $mail->Username = "automatwspolpraca@gmail.com";
     $mail->Password = "Legnicka#^^@$@#3662423";
     $mail->SetFrom("automatwspolpraca@gmail.com");
-    $mail->AddAddress("taras.kram@humanit.group");    // Set email format to HTML
+    $mail->AddAddress("hello@humanit.group");    // Set email format to HTML
 
     $mail->Subject = 'Zgloszenie od klienta';
     $mail->Body    = '' .$name. ' zostawil zgloszenie, numer tefonu: ' .$phone. '<br>adres mailowy: ' .$email. ' tekst zgloszenia: <br>' .$text;
