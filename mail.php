@@ -56,19 +56,18 @@ $contactData = array(
     print_r($result->getError());
     };
 
-    $mail = new PHPMailer;
-    $mail->CharSet = 'utf-8';
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'humanitgroup@mail.ru'; // login
-    $mail->Password = 'IyPTT41uusu:'; // password our mail
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
-    $mail->Port = 465; 
-
-    $mail->setFrom('humanitgroup@mail.ru'); // mail send
-    $mail->addAddress('taras.kram@humanit.group');     // mail get
-    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail = new PHPMailer(); // create a new object
+    $mail->IsSMTP(); // enable SMTP
+    $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPAuth = true; // authentication enabled
+    $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 465; // or 587
+    $mail->IsHTML(true);
+    $mail->Username = "automatwspolpraca@gmail.com";
+    $mail->Password = "Legnicka#^^@$@#3662423";
+    $mail->SetFrom("automatwspolpraca@gmail.com");
+    $mail->AddAddress("taras.kram@humanit.group");    // Set email format to HTML
 
     $mail->Subject = 'Zgloszenie od klienta';
     $mail->Body    = '' .$name. ' zostawil zgloszenie, numer tefonu: ' .$phone. '<br>adres mailowy: ' .$email. ' tekst zgloszenia: <br>' .$text;
